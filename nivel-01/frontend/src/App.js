@@ -1,5 +1,8 @@
 import React from "react";
 
+import "./App.css";
+import backgroundImage from "./assets/background.jpg";
+
 function App() {
   const projects = ["Projeto 01", "Projeto 02"];
 
@@ -11,6 +14,7 @@ function App() {
           <li key={project}>{project}</li>
         ))}
       </ul>
+      <img width="300" src={backgroundImage} />
     </>
   );
 }
